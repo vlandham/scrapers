@@ -21,7 +21,7 @@ class PoemsSpiderSpider(scrapy.Spider):
                 yield scrapy.Request(url, callback=self.parse_poem)
 
         # Get More Pages
-        next_page = response.css(".paginate-next::attr(href)").extract_first()
+        next_page = response.css(".pagination .next a::attr(href)").extract_first()
         if next_page is not None:
             # next_page = "http://letterboxd.com" + next_page
             next_page = response.urljoin(next_page)
