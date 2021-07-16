@@ -1,0 +1,24 @@
+{
+  "name": "seattle_parcels",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "run": "node -r esm index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@arcgis/core": "^4.20.2",
+    "@esri/arcgis-rest-auth": "^3.2.1",
+    "@esri/arcgis-rest-request": "^3.2.1",
+    "@turf/turf": "^6.5.0",
+    "arcgis-js-api": "^4.20.2",
+    "axios": "^0.21.1",
+    "cross-fetch": "^3.1.4",
+    "esm": "^3.2.25",
+    "isomorphic-form-data": "^2.0.0"
+  }
+}
