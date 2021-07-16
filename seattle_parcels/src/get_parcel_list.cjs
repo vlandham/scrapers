@@ -51,7 +51,27 @@ const options = {
   // },
   geometryType: "esriGeometryEnvelope",
   inSR: 4326,
-  outFields: ["ADDR_FULL", "OBJECTID", "LAT", "LON"],
+  outFields: [
+    "ADDR_FULL",
+    "ADDR_ST",
+    "ADDR_HN",
+    "ADDR_PD",
+    "ADDR_PT",
+    "ADDR_SN",
+    "ADDR_SD",
+    "ADDR_NUM",
+    "ZIP5",
+    "OBJECTID",
+    "LAT",
+    "LON",
+    "SITETYPE",
+    "SITEID",
+    "CR_ID",
+    "PIN",
+    "SHAPE",
+    "Building",
+    "SITETYPE_DESCRIPTION",
+  ],
   outSR: 4326,
 };
 
@@ -113,7 +133,7 @@ async function main() {
         }
       });
     });
-    await sleep(1000);
+    await sleep(2000);
   }
   storeData(Object.values(allFeatures), "data/point_info.json");
 }
