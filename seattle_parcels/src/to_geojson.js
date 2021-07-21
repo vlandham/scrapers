@@ -1,7 +1,7 @@
 import { loadData, storeData } from "./utils.js";
 
 function main() {
-  const points = loadData("../data/point_info.json");
+  const points = loadData("./data/point_info.json");
   console.log(points);
   const geojson = { type: "FeatureCollection", features: [] };
   geojson.features = points.map((point) => {
@@ -14,7 +14,7 @@ function main() {
       },
     };
   });
-  storeData(geojson, "../data/points.geojson");
+  storeData(geojson, "./data/points.geojson");
 }
 
 main();

@@ -20,4 +20,4 @@ const grid = turf.squareGrid(wExtent, cellSide, options);
 
 console.log(grid.features.length);
 
-storeData(grid, "data/grid.json");
+storeData(grid, "./data/grid.json");

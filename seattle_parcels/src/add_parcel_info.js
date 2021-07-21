@@ -1,7 +1,7 @@
 import axios from "axios";
 import { loadData, storeData, sleep } from "./utils.js";
 
-const filename = "../data/points_filtered.geojson";
+const filename = "./data/points_filtered.geojson";
 
 const infoUrl =
   "https://gismaps.kingcounty.gov/parcelviewer2/pvinfoquery.ashx?pin=";
@@ -31,7 +31,7 @@ async function main() {
 
     await sleep(100);
   }
-  storeData(points, "../data/nadmiral_parcel_info.geojson");
+  storeData(points, "./data/nadmiral_parcel_info.geojson");
 }
 
 main();
