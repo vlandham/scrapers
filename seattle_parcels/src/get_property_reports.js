@@ -1,7 +1,7 @@
 import fs from "fs";
 import axios from "axios";
 import jsdom from "jsdom";
-import { loadData, camelize, storeData, sleep } from "./utils.js";
+import { loadData, camelize, storeData } from "./utils.js";
 const { JSDOM } = jsdom;
 
 const inputFilename = "./data/nadmiral_parcel_info.geojson";
