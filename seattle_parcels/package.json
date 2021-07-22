@@ -19,6 +19,8 @@
     "axios": "^0.21.1",
     "cross-fetch": "^3.1.4",
     "esm": "^3.2.25",
-    "isomorphic-form-data": "^2.0.0"
+    "isomorphic-form-data": "^2.0.0",
+    "jsdom": "^16.6.0",
+    "minimist": "^1.2.5"
   }
 }
